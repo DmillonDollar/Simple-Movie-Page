@@ -2,8 +2,7 @@ import React, { useState, useEffect } from "react";
 import Search from "./Search";
 import Spinner from "./Spinner";
 import MovieCard from "./MovieCard";
-import { useDebounce } from "react-use";
-
+import { useDebounce } from "react-use"
 
 const App = () => {
   const [searchTerm, setSearchTerm] = useState("");
@@ -24,8 +23,6 @@ const App = () => {
       Authorization: `Bearer ${API_KEY}`
     }
      };
-
- 
 
   const fetchData = async (query = " ") => {
     try {
